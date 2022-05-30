@@ -1,0 +1,83 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        String fruits = scan.nextLine();
+        String dayOfWeek = scan.nextLine();
+        double quantity = Double.parseDouble(scan.nextLine());
+
+        double priceForFruits = 0;
+
+        if (fruits.equals("banana")){
+            if ((dayOfWeek.equals("Monday"))||dayOfWeek.equals("Tuesday")
+                    ||dayOfWeek.equals("Wednesday")||dayOfWeek.equals("Thursday")
+                    ||dayOfWeek.equals("Friday")){
+                priceForFruits = 2.5*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else if ((dayOfWeek.equals("Saturday")||dayOfWeek.equals("Sunday"))){
+                priceForFruits = 2.7*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else {
+                System.out.println("error");
+            }
+        }else if (fruits.equals("apple")){
+            if ((dayOfWeek.equals("Monday"))||dayOfWeek.equals("Tuesday")
+                    ||dayOfWeek.equals("Wednesday")||dayOfWeek.equals("Thursday")
+                    ||dayOfWeek.equals("Friday")){
+                priceForFruits = 1.2*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else if ((dayOfWeek.equals("Saturday")||dayOfWeek.equals("Sunday"))){
+                priceForFruits = 1.25*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else {
+                System.out.println("error");
+            }
+        }else if (fruits.equals("orange")){
+            if ((dayOfWeek.equals("Monday"))||dayOfWeek.equals("Tuesday")
+                    ||dayOfWeek.equals("Wednesday")||dayOfWeek.equals("Thursday")
+                    ||dayOfWeek.equals("Friday")){
+                priceForFruits = 0.85*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else if ((dayOfWeek.equals("Saturday")||dayOfWeek.equals("Sunday"))){
+                priceForFruits = 0.9*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else {
+                System.out.println("error");
+            }
+        }else if (fruits.equals("grapefruit")){
+            if ((dayOfWeek.equals("Monday"))||dayOfWeek.equals("Tuesday")
+                    ||dayOfWeek.equals("Wednesday")||dayOfWeek.equals("Thursday")
+                    ||dayOfWeek.equals("Friday")){
+                priceForFruits = 1.45*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else if ((dayOfWeek.equals("Saturday")||dayOfWeek.equals("Sunday"))){
+                priceForFruits = 1.6*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else {
+                System.out.println("error");
+            }
+        }else if (fruits.equals("kiwi")){
+            if ((dayOfWeek.equals("Monday"))||dayOfWeek.equals("Tuesday")
+                    ||dayOfWeek.equals("Wednesday")||dayOfWeek.equals("Thursday")
+                    ||dayOfWeek.equals("Friday")){
+                priceForFruits = 2.7*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else if ((dayOfWeek.equals("Saturday")||dayOfWeek.equals("Sunday"))){
+                priceForFruits = 3.0*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else {
+                System.out.println("error");
+            }
+        }else if (fruits.equals("pineapple")){
+            if ((dayOfWeek.equals("Monday"))||dayOfWeek.equals("Tuesday")
+                    ||dayOfWeek.equals("Wednesday")||dayOfWeek.equals("Thursday")
+                    ||dayOfWeek.equals("Friday")){
+                priceForFruits = 5.5*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else if ((dayOfWeek.equals("Saturday")||dayOfWeek.equals("Sunday"))){
+                priceForFruits = 5.6*quantity;
+                System.out.printf("%.2f", priceForFruits);
+            }else {
+                System.out.println("error");
